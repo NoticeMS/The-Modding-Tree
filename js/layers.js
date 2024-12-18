@@ -10,8 +10,8 @@ addLayer("l", {
     row: 1, // Row the layer is in on the tree (0 is the first row)
     layerShown(){return true},
     upgrades: {
-        rows: 2,
-        cols: 2,
+        rows: 3,
+        cols: 3,
         11: {
             name: "Lime Doubler",
             description: "Double Limes",
@@ -19,7 +19,7 @@ addLayer("l", {
             currencyInternalName: "points",
             currencyDisplayName: "limes"
         },
-        12: {
+        22: {
             name: "Lime Tripler",
             description: "Triple Limes",
             cost: 115,
@@ -31,15 +31,23 @@ addLayer("l", {
             name: "Lime Booster I",
             description: "1.5x Limes",
             cost: 365,
-            unlocked() { return hasUpgrade('l', 12)},
+            unlocked() { return hasUpgrade('l', 22)},
             currencyInternalName: "points",
             currencyDisplayName: "limes"
         },
-        22: {
+        23: {
             name: "Lime Booster II",
             description: "1.75x Limes",
             cost: 550,
-            unlocked() { return hasUpgrade('l', 12)},
+            unlocked() { return hasUpgrade('l', 22)},
+            currencyInternalName: "points",
+            currencyDisplayName: "limes"
+        },
+        32: {
+            name: "Lime Synergy I",
+            description: "Limes boost themselves: x^",
+            cost: 1000,
+            unlocked() { return hasUpgrade('l', 22)},
             currencyInternalName: "points",
             currencyDisplayName: "limes"
         },
