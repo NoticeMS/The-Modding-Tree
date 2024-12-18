@@ -4,7 +4,7 @@ var layoutInfo = {
 	showTree: true,
 
     treeLayout: [
-        ["click for 1 lime"],
+        ["click to get limes"],
         ["l"],
     ]
 
@@ -18,7 +18,7 @@ addNode("click for 1 lime", {
     getLimes() {
         a = new Decimal(1);
         if (hasUpgrade('l', 11)) a = a.times(2);
-        if (hasUpgrade('l', 12)) a = a.times(6)
+        if (hasUpgrade('l', 12)) a = a.times(3)
         return a;
     },
     onClick() {
