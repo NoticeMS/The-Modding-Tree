@@ -4,7 +4,7 @@ var layoutInfo = {
 	showTree: true,
 
     treeLayout: [
-        ["click to get limes"],
+        ["Lime Clicker"],
         ["l"],
     ]
 
@@ -13,12 +13,14 @@ var layoutInfo = {
 
 
 // A "ghost" layer which offsets other layers in the tree
-addNode("click for 1 lime", {
+addNode("Lime Clicker", {
     nodeStyle: {"height": "150px", "width": "150px", "background-position": "center", "background-repeat": "no-repeat", "border-radius": "75px"},
     getLimes() {
         a = new Decimal(1);
         if (hasUpgrade('l', 11)) a = a.times(2);
-        if (hasUpgrade('l', 12)) a = a.times(3)
+        if (hasUpgrade('l', 12)) a = a.times(3);
+        if (hasUpgrade('l', 21)) a = a.times(1.5);
+        if (hasUpgrade('l', 22)) a = a.times(1.75)
         return a;
     },
     onClick() {
