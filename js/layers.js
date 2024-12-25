@@ -45,7 +45,7 @@ addLayer("l", {
         },
         32: {
             name: "Lime Synergy I",
-            description: "Limes boost themselves: x^",
+            description: "Limes boost themselves: x^1.1(idk the formula)",
             cost: 1000,
             unlocked() { return hasUpgrade('l', 22)},
             currencyInternalName: "points",

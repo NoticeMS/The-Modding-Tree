@@ -20,7 +20,8 @@ addNode("Lime Clicker", {
         if (hasUpgrade('l', 11)) a = a.times(2);
         if (hasUpgrade('l', 22)) a = a.times(3);
         if (hasUpgrade('l', 21)) a = a.times(1.5);
-        if (hasUpgrade('l', 23)) a = a.times(1.75)
+        if (hasUpgrade('l', 23)) a = a.times(1.75);
+        if (hasUpgrade('l', 32)) a = a.pow(1.1)
         return a;
     },
     onClick() {

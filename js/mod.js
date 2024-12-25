@@ -1,7 +1,7 @@
 let modInfo = {
-	name: "The Lime Upgrade Tree",
-	id: "mymod",
-	author: "nobody",
+	name: "The Lime'ing Tree",
+	id: "limemod",
+	author: "LooFII",
 	pointsName: "limes",
 	modFiles: ["layers.js", "tree.js"],
 
@@ -13,14 +13,14 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0",
-	name: "Literally nothing",
+	num: "0.1",
+	name: "Lime Era",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
 	<h3>v0.0</h3><br>
-		- Added things.<br>
-		- Added stuff.`
+		- Added Limes.<br>
+		- Added Lime Layer.`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
