@@ -13,14 +13,14 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.1",
-	name: "Lime Era",
+	num: "0.2",
+	name: "Pre-Lemon Era",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
 	<h3>v0.0</h3><br>
-		- Added Limes.<br>
-		- Added Lime Layer.`
+		- Added More Limes.<br>
+		- Added Pre-Lemon Upgrade(aka autoclicker).`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 

@@ -17,11 +17,14 @@ addNode("Lime Clicker", {
     nodeStyle: {"height": "150px", "width": "150px", "background-position": "center", "background-repeat": "no-repeat", "border-radius": "75px"},
     getLimes() {
         a = new Decimal(1);
-        if (hasUpgrade('l', 11)) a = a.times(2);
-        if (hasUpgrade('l', 22)) a = a.times(3);
-        if (hasUpgrade('l', 21)) a = a.times(1.5);
-        if (hasUpgrade('l', 23)) a = a.times(1.75);
-        if (hasUpgrade('l', 32)) a = a.pow(1.1)
+        if (hasUpgrade('l', 12)) a = a.times(2);
+        if (hasUpgrade('l', 23)) a = a.times(3);
+        if (hasUpgrade('l', 22)) a = a.times(1.5);
+        if (hasUpgrade('l', 24)) a = a.times(1.75);
+        if (hasUpgrade('l', 33)) a = a.pow(1.1);
+        if (hasUpgrade('l', 34)) a = a.times(3.5);
+        if (hasUpgrade('l', 32)) a = a.times(3.14);
+        if (hasUpgrade('l', 43)) a = a.times(4)
         return a;
     },
     onClick() {
