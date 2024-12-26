@@ -4,7 +4,6 @@ addLayer("l", {
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
     startData() { return {
         unlocked: true,
-		points: new Decimal(0),
     }},
     color: "#D9D9D9",
     row: 1, // Row the layer is in on the tree (0 is the first row)
@@ -75,9 +74,24 @@ addLayer("l", {
             currencyInternalName: "points",
             currencyDisplayName: "limes"
         },
-        53: {
+    },
+})
+addLayer("l2", {
+    startData() { return {
+        unlocked: true,
+    }},
+    name: "lime2", // This is optional, only used in a few places, If absent it just uses the layer id.
+    symbol: "L2", // This appears on the layer's node. Default is the id with the first letter capitalized
+    position: 1, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
+    color: "#D9D9D9",
+    row: 1, // Row the layer is in on the tree (0 is the first row)
+    layerShown(){return true},
+    upgrades: {
+        rows: 4,
+        cols: 5,
+        13: {
             name: "Lime Autoclicker",
-            description: "Autoclick on Lime Button every 0.1 Seconds but lose ability to click on it.",
+            description: "Enable holding Lime Button for 20 cps(wip)",
             cost: 350000,
             unlocked() { return hasUpgrade('l', 43)},
             currencyInternalName: "points",

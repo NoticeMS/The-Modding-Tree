@@ -5,7 +5,7 @@ var layoutInfo = {
 
     treeLayout: [
         ["Lime Clicker"],
-        ["l"],
+        ["l"], ["l2"],
     ]
 
     
@@ -29,6 +29,9 @@ addNode("Lime Clicker", {
     },
     onClick() {
         player.points = player.points.add(this.getLimes())
+    },
+    onHold() {
+        if (hasUpgrade('l2', 13)) player.points = player.points.add(this.getLimes())
     },
     canClick() {return true},
     color: "#d8d8d8",
