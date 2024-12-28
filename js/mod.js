@@ -34,15 +34,25 @@ function getStartPoints(){
 
 // Determines if it should show points/sec
 function canGenPoints(){
-	return false
+	return true
 }
 
 // Calculate points/sec!
 function getPointGen() {
 	if(!canGenPoints())
 		return new Decimal(0)
-
-	let gain = new Decimal(1)
+	let gain = new Decimal(0)
+	if(hasUpgrade('l2', 13))
+		gain = new Decimal(1);
+		if (hasUpgrade('l', 12)) gain = gain.times(2);
+		if (hasUpgrade('l', 23)) gain = gain.times(3);
+		if (hasUpgrade('l', 22)) gain = gain.times(1.5);
+		if (hasUpgrade('l', 24)) gain = gain.times(1.75);
+		if (hasUpgrade('l', 33)) gain = gain.pow(1.4);
+		if (hasUpgrade('l', 34)) gain = gain.times(3.5);
+		if (hasUpgrade('l', 32)) gain = gain.times(3.14);
+		if (hasUpgrade('l', 43)) gain = gain.times(4);
+	if (hasUpgrade('l2', 13)) gain = gain.times(10)
 	return gain
 }
 
